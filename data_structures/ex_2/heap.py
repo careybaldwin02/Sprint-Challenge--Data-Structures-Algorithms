@@ -1,6 +1,24 @@
+# https://en.wikipedia.org/wiki/Heapsort
+
 def heapsort(arr):
- pass 
- 
+# change the inputted array to a heap
+# create a storage array for sorted data
+# use the insert method from Heap class to insert each element in the array
+# we will need to then reverse the order of the array to make elements in ascending order
+
+  heap = Heap() # creates an empty heap tree
+  sorted = [0 for _ in range(len(arr))] #??
+  # sorted = [0] * len(arr)  # creates an array that is an array of 0's
+
+  for item in arr:
+    heap.insert(item)
+
+  for i in range(len(arr)):
+    sorted[len(arr)-i-1] = heap.delete() 
+  # we can do this because the delete method returns the deleted value
+  # we are setting the sorted array items with the removed items from the heap
+
+  return sorted
 
 class Heap:
   def __init__(self):
