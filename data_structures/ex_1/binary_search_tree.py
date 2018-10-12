@@ -16,7 +16,7 @@ class BinarySearchTree:
     # display the value of the root or current node
     # traverse the left subtree by recursively calling the dfs function
     # traverse the right subtree by recursively calling the dfs function
-    stack = []
+    stack = [] # lifo ordering
     stack.append(self)
 
     while len(stack):
@@ -29,7 +29,8 @@ class BinarySearchTree:
       cb(current.value)
 
   def breadth_first_for_each(self, cb):
-    queue = []
+    # check form left to right
+    queue = [] # filo ordering
     queue.append(self)
 
     while len(queue):
