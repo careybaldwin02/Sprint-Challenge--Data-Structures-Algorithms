@@ -16,10 +16,17 @@ class BinarySearchTree:
     # display the value of the root or current node
     # traverse the left subtree by recursively calling the dfs function
     # traverse the right subtree by recursively calling the dfs function
-    
-     
+    stack = [0]
+    stack.append(self)
 
-
+    while stack:
+      current = stack.pop()
+      if current.right:
+        stack.append(current.right)
+      if current.left:
+        stack.append(current.left)
+      
+      cb(current.value)
 
   def breadth_first_for_each(self, cb):
     pass
