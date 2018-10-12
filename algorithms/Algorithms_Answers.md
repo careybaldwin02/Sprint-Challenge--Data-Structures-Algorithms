@@ -2,15 +2,17 @@ Add your answers to the Algorithms exercises here.
 
 a) 
 
-I'm thinking of n as the length of a list, which should simply be a single constant value.  n * n * n would also be a constant value.  If this is correct, then the runtime complexity of the above code should be O(1).  
+I'm thinking of n as the length of a list.  As n increases the number of operations increases proportionally.  If this is correct, then the runtime complexity of the above code should be O(n).  
 
 b) 
 
-My understanding is that each time we loop over a set number of elements we increase the number of operations by a factor of n.  So this looks to have time complexity O(n^4) because there are four loops.
+My understanding is that each time we loop over a set number of n elements we increase the number of operations by a factor of n.  So this looks to have time complexity O(n^3) because there are three loops that loop over the n items.
 
 c)
 
 This looks to be a recursive function where each subsequent call of the function has an input that is reduced by one.  This suggests to me that the time complexty would be O(n!).
+
+# I need to discuss why this is O(n) complexity
 
 d) 
 
