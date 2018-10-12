@@ -1,3 +1,10 @@
+# stack data structure could be lifo or filo
+# https://www.geeksforgeeks.org/stack-data-structure/
+# https://www.youtube.com/watch?v=0Zsabo7ires
+# https://www.youtube.com/watch?v=QVcsSaGeSH0
+# https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/
+# BEST RESOURCE:  https://www.youtube.com/watch?v=6oL-0TdVy28
+
 class BinarySearchTree:
   def __init__(self, value):
     self.value = value
@@ -5,7 +12,14 @@ class BinarySearchTree:
     self.right = None
 
   def depth_first_for_each(self, cb):
-    pass    
+    # check if the current node is empty or null
+    # display the value of the root or current node
+    # traverse the left subtree by recursively calling the dfs function
+    # traverse the right subtree by recursively calling the dfs function
+    
+     
+
+
 
   def breadth_first_for_each(self, cb):
     pass
